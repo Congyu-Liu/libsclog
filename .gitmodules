@@ -1,0 +1,4 @@
+[submodule "src"]
+	path = src
+	url = git@github.com:liucy1998/strace.git
+	branch = libsclog-5.14
