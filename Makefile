@@ -20,3 +20,5 @@ test: ./sclog_test
 
 clean:
 	rm ./sclog_test
+	rm ./libsclog.a
+	cd ./src && make clean
