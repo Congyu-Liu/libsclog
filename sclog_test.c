@@ -49,7 +49,7 @@ struct Syscall test_cases[] = {
 
 void run_tests(void) {
     FILE *f = fopen("test_log", "w");
-    init_sclog();
+    init_sclog(1000);
     set_log_file(0, f);
     int i = 0;
     for(; i < ntest; i++) {

@@ -10,7 +10,7 @@
 extern "C" {
 #endif
 void set_log_file(int log_idx, FILE *f);
-void init_sclog(void);
+void init_sclog(int max_slen);
 void log_syscall_printf(int log_idx, const char *fmt, ...);
 void log_syscall_with_index(int log_idx, int idx, intptr_t scno, int argn, intptr_t args[], intptr_t rval, intptr_t err, bool entering);
 int get_trace_size(int log_idx);
